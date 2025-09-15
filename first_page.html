@@ -61,7 +61,7 @@
             top: 250%;
             left: 116%;
             width: 1.5%;
-            height: 1600%;
+            height: 2080%;
             background-color:#0c415e;
         }
 
@@ -117,6 +117,44 @@
             top: -50%;
         }
 
+        @media screen and (min-width: 320px) and (max-width: 450px){ /*taille mobile*/
+            .conteneur-images {
+                position: relative;
+                width: 100%; /* s'adapte à la largeur de son parent */
+                max-width: 50%; /* limite à 320px si possible */
+                aspect-ratio: 16 / 11; /* garde les proportions (équivalent à 320x220) */
+            }
+        }
+       
+        @media screen and (min-width: 700px) and (max-width: 1400px) { /*taille tablette*/
+            .conteneur-images{
+                    position: relative;
+                    width: 50%;
+                    height: 420px;
+                }
+        }
+        @media screen and (min-width: 1401px) { /*taille pc*/
+            .conteneur-images{
+                    position: relative;
+                    width: 850px;
+                    height: 500px;
+                }
+        }
+
+        @media screen and (min-width: 162px) and (max-width: 197px){ /*Watch*/
+            .conteneur-images, .square, .section{
+                position: relative;
+                width: 50%; /* s'adapte à la largeur de son parent */
+                max-height: 60px;
+            }
+            .writing, .writing_section{
+                font-size: 5px;
+                top: 5;
+            }
+            .writing_plats {
+                left: -20px;
+            }
+        }
   </style>
 </head>
 <body>
@@ -132,17 +170,17 @@
         <div class="section"; style="top: 245%;left: 40%;width: 28%;height: 12%"> 
             <div class="writing_section">
             <h2>ENTRÉES</h2>
-            <h3 class="writing_plats"; style=" right: 142%;"> Salade<br><br></h3>
+            <h3 class="writing_plats"; style=" right: 80%;"> Salade<br><br></h3>
             </div>
         </div>
 
         <div class="section"; style="top: 290%;left: 40%;width: 31%;height: 12%"> 
             <div class="writing_section">
             <h2>DESSERTS</h2>
-             <h3 class="writing_plats"; style=" left: -48%">. 3 crêpes nature/confiture/chocolat<br></h3>
-             <h3 class="writing_plats"; style=" left: -48%">. Crème au chocolat/café<br></h3>
-             <h3 class="writing_plats"; style=" left: -48%"> . Pain perdu brioche aux bananes<br></h3>
-             <h3 class="writing_plats"; style=" left: -48%"> . Yaourt miel au muesli<br></h3>            
+             <h3 class="writing_plats"; style=" left: -35%">. 3 crêpes nature/confiture/chocolat<br></h3>
+             <h3 class="writing_plats"; style=" left: -35%">. Crème au chocolat/café<br></h3>
+             <h3 class="writing_plats"; style=" left: -35%"> . Pain perdu brioche aux bananes<br></h3>
+             <h3 class="writing_plats"; style=" left: -35%"> . Yaourt miel au muesli<br></h3>            
             </div>
         </div>
         
@@ -150,60 +188,60 @@
             <div class="writing_section">
             <h2>Grill Food<br><br></h2>
             </div>
-            <h3 class="writing_plats"; style=" left: -130%"><br><br> . Brochettes mixte ......................................2500F</h3>
-            <p style="left: -120%"> Saucisses/Gésier/Fromage</p>
-            <h3 class="writing_plats"; style=" left: -130%"> . Brochettes de boeuf .................................3000F</h3>
-            <h3 class="writing_plats"; style=" left: -130%"> . Emincés de boeuf .....................................3500F</h3>
-            <p style="left: -120%"> Saucé au légumes</p>
-            <h3 class="writing_plats"; style=" left: -130%"> . Tilapia ........................................................3500F</h3>
-            <h3 class="writing_plats"; style=" left: -130%"> . Poulet braisé .............................................3500F</h3>
+            <h3 class="writing_plats"; style=" left: -70%"><br><br> . Brochettes mixte ......................................2500F</h3>
+            <p style="left: -70%"> Saucisses/Gésier/Fromage</p>
+            <h3 class="writing_plats"; style=" left: -70%"> . Brochettes de boeuf .................................3000F</h3>
+            <h3 class="writing_plats"; style=" left: -70%"> . Emincés de boeuf .....................................3500F</h3>
+            <p style="left: -70%"> Saucé au légumes</p>
+            <h3 class="writing_plats"; style=" left: -70%"> . Tilapia ........................................................3500F</h3>
+            <h3 class="writing_plats"; style=" left: -70%"> . Poulet braisé .............................................3500F</h3>
             <h3>Accompagnements</h3>
-            <p style="left: -120%"> Frite de pomme de terre, frite d'igname, Patate douce ,<br>légumes sautées, Attieke(700f la portion supplémentaire) </p>
+            <p style="left: -70%"> Frite de pomme de terre, frite d'igname, Patate douce ,<br>légumes sautées, Attieke(700f la portion supplémentaire) </p>
         </div>
         
         <div class="section"; style="top: 550%;left: 40%;width: 35%;height: 12%"> 
             <div class="writing_section">
             <h2>Pasta(2500)</h2>
             </div>
-            <h3 class="writing_plats"; style=" left: -115%"><br><br> . Bolognese<br></h3>
-            <h3 class="writing_plats"; style=" left: -115%"> . Spaghetti sauce mourade<br></h3>
-            <p style="left: -109%"> Tilapia/Poulet/Mouton/Filet de boeuf/viande hachée</p>
-            <h3 class="writing_plats"; style=" left: -115%"> . Salades de pâtes<br></h3>
-            <p style="left: -109%"> sauce vinaigrette, oignon, tomate, choux, carotte,<br> saucisse, oeuf, gésier</p>
-            <h3 class="writing_plats"; style=" left: -115%"> . Spaghetti sauté au légumes<br></h3>
-            <p style="left: -109%"> Tilapia/Poulet/Mouton/Filet de boeuf/viande hachée</p>
-            <h3 class="writing_plats"; style=" left: -115%"> . Spaghetti au beurre à l'ail<br></h3>
-            <p style="left: -109%"> Tilapia/Poulet/Mouton/Filet de boeuf/viande hachée</p>
-            <h3 class="writing_plats"; style=" left: -115%"> . Spaghetti stir fry<br></h3>
+            <h3 class="writing_plats"; style=" left: -60%"><br><br> . Bolognese<br></h3>
+            <h3 class="writing_plats"; style=" left: -60%"> . Spaghetti sauce mourade<br></h3>
+            <p style="left: -60%"> Tilapia/Poulet/Mouton/Filet de boeuf/viande hachée</p>
+            <h3 class="writing_plats"; style=" left: -60%"> . Salades de pâtes<br></h3>
+            <p style="left: -60%"> sauce vinaigrette, oignon, tomate, choux, carotte,<br> saucisse, oeuf, gésier</p>
+            <h3 class="writing_plats"; style=" left: -60%"> . Spaghetti sauté au légumes<br></h3>
+            <p style="left: -60%"> Tilapia/Poulet/Mouton/Filet de boeuf/viande hachée</p>
+            <h3 class="writing_plats"; style=" left: -60%"> . Spaghetti au beurre à l'ail<br></h3>
+            <p style="left: -60%"> Tilapia/Poulet/Mouton/Filet de boeuf/viande hachée</p>
+            <h3 class="writing_plats"; style=" left: -60%"> . Spaghetti stir fry<br></h3>
             </div>
         
         <div class="section"; style="top: 740%;left:40%;width: 58%;height: 12%"> 
             <div class="writing_section">
-            <h2>Monlinkoun(2500F)</h2>
+            <h2>Monlinkoun(2500F)</h2> <br><br><br>
             </div>
-            <p style="left: -70%"><br><br>(Poisson, Poulet, Filet de boeuf, Mouton, Viande hachée)</p>
-            <h3 class="writing_plats"; style=" left: -70%"> . Couscous au légumes<br></h3>
-            <h3 class="writing_plats"; style=" left: -70%"> . Riz au légumes<br></h3>
-            <h3 class="writing_plats"; style=" left: -70%"> . Riz au gras<br></h3>
-            <h3 class="writing_plats"; style=" left: -70%"> . Fried rice<br></h3>
-            <h3 class="writing_plats"; style=" left: -70%"> . Riz sauce blanche<br></h3>
-            <h3 class="writing_plats"; style=" left: -70%"> . Riz au yassa<br></h3>
+            <p style="left: -30%"><br><br><br>(Poisson, Poulet, Filet de boeuf, Mouton, Viande hachée)</p>
+            <h3 class="writing_plats"; style=" left: -30%"> . Couscous au légumes<br></h3>
+            <h3 class="writing_plats"; style=" left: -30%"> . Riz au légumes<br></h3>
+            <h3 class="writing_plats"; style=" left: -30%"> . Riz au gras<br></h3>
+            <h3 class="writing_plats"; style=" left: -30%"> . Fried rice<br></h3>
+            <h3 class="writing_plats"; style=" left: -30%"> . Riz sauce blanche<br></h3>
+            <h3 class="writing_plats"; style=" left: -30%"> . Riz au yassa<br></h3>
             <h3>Accompagnements</h3>
-            <p style="left: -70%"> Frite de pomme de terre, frite d'igname, Patate douce,<br>légumes sautées, Alloco(700f la portion supplémentaire) </p>
+            <p style="left: -30%"> Frite de pomme de terre, frite d'igname, Patate douce,<br>légumes sautées, Alloco(700f la portion supplémentaire) </p>
         </div>
         
         <div class="section"; style="top: 905%;left: 40%;width: 57%;height: 12%"> 
             <div class="writing_section">
             <h2 style="white-space: nowrap">Queen food(2500F)</h2>
             </div>
-            <h3 class="writing_plats"; style=" left: -70%"><br><br>. Shawarma saucisse + frites<br></h3>
-            <h3 class="writing_plats"; style=" left: -70%"> . Shawarma boeuf + frites<br></h3>
-            <h3 class="writing_plats"; style=" left: -70%"> . Shawarma fusion<br></h3>
-            <h3 class="writing_plats"; style=" left: -70%"> . Chicken burger<br></h3>
-            <h3 class="writing_plats"; style=" left: -70%"> . Beef burger<br></h3>
-            <h3 class="writing_plats"; style=" left: -70%"> . Egg burger<br></h3>
+            <h3 class="writing_plats"; style=" left: -30%"><br><br>. Shawarma saucisse + frites<br></h3>
+            <h3 class="writing_plats"; style=" left: -30%"> . Shawarma boeuf + frites<br></h3>
+            <h3 class="writing_plats"; style=" left: -30%"> . Shawarma fusion<br></h3>
+            <h3 class="writing_plats"; style=" left: -30%"> . Chicken burger<br></h3>
+            <h3 class="writing_plats"; style=" left: -30%"> . Beef burger<br></h3>
+            <h3 class="writing_plats"; style=" left: -30%"> . Egg burger<br></h3>
             <h3>Sauces</h3>
-            <p style="left: -70%">Kebab/Chili/Ketchup/Béarnaise/Moutarde au miel</p>
+            <p style="left: -30%">Kebab/Chili/Ketchup/Béarnaise/Moutarde au miel</p>
         </div>
         
         <div class="section"; style="top: 1055%;left: 40%;width: 43%;height: 12%"> 
@@ -211,24 +249,24 @@
             <h2>Ganzin(2500F)</h2>
             </div>
             <h3><br><br>Sauces</h3>
-            <p style="left: -95%">(Mouton/Poulet/Fromage/Tilapia/Kpkaman/fromage/<br>Poisson fumé)</p>
-            <h3 class="writing_plats"; style=" left: -95%"> .Tomate<br></h3>
-            <h3 class="writing_plats"; style=" left: -95%"> . Arachide<br></h3>
-            <h3 class="writing_plats"; style=" left: -95%"> . Friture + crincrin<br></h3>
-            <h3 class="writing_plats"; style=" left: -95%"> . Gombo<br></h3>
-            <h3 class="writing_plats"; style=" left: -95%"> . Gboman<br></h3>
-            <h3 class="writing_plats"; style=" left: -95%"> . Amanvivè<br></h3>
-            <h3 class="writing_plats"; style=" left: -95%"> . Jus d'oignon et tomate<br></h3>
-            <h3 class="writing_plats"; style=" left: -95%"> . Assrokouin<br></h3>
+            <p style="left: -45%">(Mouton/Poulet/Fromage/Tilapia/Kpkaman/fromage/<br>Poisson fumé)</p>
+            <h3 class="writing_plats"; style=" left: -45%"> .Tomate<br></h3>
+            <h3 class="writing_plats"; style=" left: -45%"> . Arachide<br></h3>
+            <h3 class="writing_plats"; style=" left: -45%"> . Friture + crincrin<br></h3>
+            <h3 class="writing_plats"; style=" left: -45%"> . Gombo<br></h3>
+            <h3 class="writing_plats"; style=" left: -45%"> . Gboman<br></h3>
+            <h3 class="writing_plats"; style=" left: -45%"> . Amanvivè<br></h3>
+            <h3 class="writing_plats"; style=" left: -45%"> . Jus d'oignon et tomate<br></h3>
+            <h3 class="writing_plats"; style=" left: -45%"> . Assrokouin<br></h3>
             <h3>Accompagnements</h3>
             <p style="left: -20%">(700F la portion supplémentaire)</p>
-            <h3 class="writing_plats"; style=" left: -95%"> . Amowô<br></h3>
-            <h3 class="writing_plats"; style=" left: -95%"> . Riz blanc<br></h3>
-            <h3 class="writing_plats"; style=" left: -95%"> . Télibo<br></h3>
-            <h3 class="writing_plats"; style=" left: -95%"> . Piron<br></h3>
-            <h3 class="writing_plats"; style=" left: -95%"> . Pâte de mais<br></h3>
-            <h3 class="writing_plats"; style=" left: -95%"> . Agbéli<br></h3>
-            <h3 class="writing_plats"; style=" left: -95%"> . Akassa<br></h3>
+            <h3 class="writing_plats"; style=" left: -45%"> . Amowô<br></h3>
+            <h3 class="writing_plats"; style=" left: -45%"> . Riz blanc<br></h3>
+            <h3 class="writing_plats"; style=" left: -45%"> . Télibo<br></h3>
+            <h3 class="writing_plats"; style=" left: -45%"> . Piron<br></h3>
+            <h3 class="writing_plats"; style=" left: -45%"> . Pâte de mais<br></h3>
+            <h3 class="writing_plats"; style=" left: -45%"> . Agbéli<br></h3>
+            <h3 class="writing_plats"; style=" left: -45%"> . Akassa<br></h3>
         </div>
         
         <div class="section"; style="top: 1380%;left: 40%;width: 42%;height: 12%"> 
@@ -269,7 +307,50 @@
              <h3 class="writing_plats"; style=" left: -35%"> . Oeuf igname/Banane/Plantain/Patate <br>douce ..............................................................2000F</h3>       
             </div>
         </div>
-
+        /* --------------------------------------*/
+        <div class="section"; style="top: 1780%;left: 40%;width: 25%;height: 12%;font-family: 'Calibri'"> 
+            <div class="writing_section">
+            <h2>COCKTAIL</h2><br>
+            <h3>Sobebra    1000 F</h3><br>
+            <h3 class="writing_plats"; style=" left: -35%"> <pre>. Aqua belle(1,5l)                 Beaufort lager(33cl)</pre></h3>
+            <h3 class="writing_plats"; style=" left: -35%"> <pre>. Youki cocktail fruit(33cl)       Guiness(33cl)</pre></h3>
+            <h3 class="writing_plats"; style=" left: -35%"> <pre>. Youki pamplemousse               Eku bavaria(33cl)</pre></h3>
+            <h3 class="writing_plats"; style=" left: -35%"> <pre>. Youki moka café(33cl)            Doppel Munich lager(33cl)</pre></h3>
+            <h3 class="writing_plats"; style=" left: -35%"> <pre>. Youzou(33cl)                     Béninoise(33cl)</pre></h3>
+            <h3 class="writing_plats"; style=" left: -35%"> <pre>. World cola(33cl)                 Pils(33cl)</pre></h3>
+            <h3 class="writing_plats"; style=" left: -35%"> <pre>. Malta tonic café(33cl)           Flag spécial(65cl)</pre></h3>  
+            </div>
+        </div>
+        <div class="section"; style="top: 1980%;left: 28%;width: 60%;height: 12%"> 
+            <div class="writing_section">
+            <h1 style="white-space: nowrap;">Cocktails 50 cl/80cl</h1>
+            <h3 style="white-space: nowrap;">Cocktails(50cl/80c) avec alcool----1500/2000 F</h3><br>
+            <h3 class="writing_plats"; style=" left: -20%">. Rubis tropical</h3>
+            <h3 class="writing_plats"; style=" left: -20%">. Sunrise</h3>
+            <h3 class="writing_plats"; style=" left: -20%">. Iced tea mojito</h3>
+            </div>
+        </div>
+        <div class="section"; style="top: 2080%;left: 12%;width: 100%;height: 12%"> 
+            <div class="writing_section">
+            <h2 style="white-space: nowrap">Cocktails(50cl/80c) avec alcool----2500/3500 F</h2><br>
+            <h3 class="writing_plats"; style=" left: -2%">. Mojito </h3>
+            <h3 class="writing_plats"; style=" left: -2%">. Margarita </h3>
+            <h3 class="writing_plats"; style=" left: -2%">. Cuba libre </h3>
+            <h3 class="writing_plats"; style=" left: -2%">. Téquila sunrise </h3>
+            <h3 class="writing_plats"; style=" left: -2%">. Blue lagon </h3>
+            <h3 class="writing_plats"; style=" left: -2%">. Pina Colada </h3>
+            <h3 class="writing_plats"; style=" left: -2%">. Cosmo politan</h3>
+            <h3 class="writing_plats"; style=" left: -2%">. Sex on the beach</h3>
+            </div>
+        </div>
+        <div class="section"; style="top: 2240%;left: 40%;width: 22%;height: 12%"> 
+            <div class="writing_section">
+            <h2>Autres</h2><br>
+            <h3 class="writing_plats"; style=" left: -35%">Shot------------------------------------------500 F</h3>
+            <h3 class="writing_plats"; style=" left: -35%">Ira-------------------------------------------1000 F</h3>
+            <h3 class="writing_plats"; style=" left: -35%">Vody vodka--------------------------------1000 F</h3>
+            </div>
+        </div>
         <div class="designe3"></div>
         <div class="designe4">
             <img src="src/salade.png" alt="image de salade" style="position: relative;width:60%; height: 2%; top: 0.5%; left: 12%;" >
@@ -301,6 +382,5 @@
             <img src="src/snaks1.jpg" alt="image" style="position: relative;width:60%; height: 2.5%; top: 31%; left: 12%;">
         </div>
         </div>
-    
 </body>
 </html>
