@@ -119,6 +119,15 @@
             top: -40%;
         }
 
+        .traduction {
+                position: relative;
+                top: 190%;
+                left: 12%;
+                width: 30%;
+                height: 10%;
+                font-size: 10%;   
+            }
+
         @media screen and (min-width: 320px) and (max-width: 450px){ /*taille mobile*/
             .conteneur-images {
                 position: relative;
@@ -133,7 +142,16 @@
                     width: 50%;
                     height: 420px;
                 }
+            .square {
+                position: relative;
+                top: 210%;
+                left: 90%;
+                width: 27%;
+                height: 10%;
+                background-color: #f5bc61;   
+            }
         }
+
         @media screen and (min-width: 1401px) { /*taille pc*/
             .conteneur-images{
                     position: relative;
@@ -168,9 +186,8 @@
             <div class="writing"> <h1>MENU</h1></div>
         </div>
         /**/
-        <div class="section">
-
-  <!-- Ici le widget apparaîtra -->
+        <div class="traduction">
+              <!-- Ici le widget apparaîtra -->
   <div id="google_translate_element"></div>
 
   <script type="text/javascript">
@@ -180,13 +197,14 @@
           pageLanguage: 'fr',
           includedLanguages: 'fr,en',
           layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-        }, 'google_translate_element');
+        }, 
+        'google_translate_element'
+      );
     }
   </script>
 
   <!-- Attention : bien mettre https -->
   <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
         </div>
         /**/
         <div class="section"; style="top: 245%;left: 23%;width: 26%;height: 12%"> 
