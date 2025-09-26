@@ -3,8 +3,6 @@
 <html>
 <head>
   <title>Menu Food-in</title>
-  <meta charset="UTF-8">
-
   <style>
             .conteneur-images {
             position: relative; /* Positionnement par rapport à ce conteneur */
@@ -24,9 +22,9 @@
         .image-premier-plan {
             position: absolute;
             top: 100%;
-            left: 90%;
-            width: 50%;
-            height: 30%;
+            left: 100%;
+            width: 30%;
+            height: 35%;
             margin: auto; 
             z-index: 2; /* Cette image est au-dessus */
         }
@@ -63,7 +61,7 @@
             top: 250%;
             left: 116%;
             width: 1.5%;
-            height: 1450%;
+            height: 2010%;
             background-color:#0c415e;
         }
 
@@ -72,7 +70,7 @@
             top: 255%;
             left: 119%;
             width: 80%;
-            height: 1450%;
+            height: 2010%;
             background-color: #f5bc61;
         }
 
@@ -101,6 +99,17 @@
             top: 0%;
         }
         
+        .bouton-lien {
+            position: absolute;
+    display: inline-block; /* Permet d'appliquer des marges et des tailles */
+    padding: 10px 20px; /* Espace entre le texte et la bordure */
+    background-color: #f5bc61; /* Couleur de fond du bouton */
+    color: #0c415e; /* Couleur du texte */
+    text-decoration: none; /* Supprime le soulignement par défaut des liens */
+    border: none; /* Supprime la bordure par défaut */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Change l'icône du curseur au survol */
+}
         h1 {
             font-family: 'Calibri';
             color:#0c415e;
@@ -116,64 +125,9 @@
             white-space: nowrap;
             width: 200%;
             display: block;
-            top: -40%;
+            top: -50%;
         }
 
-        .traduction {
-                position: relative;
-                top: 190%;
-                left: 12%;
-                width: 30%;
-                height: 10%;
-                font-size: 10%;   
-            }
-
-        @media screen and (min-width: 320px) and (max-width: 450px){ /*taille mobile*/
-            .conteneur-images {
-                position: relative;
-                width: 100%; /* s'adapte à la largeur de son parent */
-                max-width: 50%; /* limite à 320px si possible */
-                aspect-ratio: 16 / 11; /* garde les proportions (équivalent à 320x220) */
-            }
-        }
-        @media screen and (min-width: 700px) and (max-width: 1400px) { /*taille tablette*/
-            .conteneur-images{
-                    position: relative;
-                    width: 50%;
-                    height: 420px;
-                }
-            .square {
-                position: relative;
-                top: 210%;
-                left: 90%;
-                width: 27%;
-                height: 10%;
-                background-color: #f5bc61;   
-            }
-        }
-
-        @media screen and (min-width: 1401px) { /*taille pc*/
-            .conteneur-images{
-                    position: relative;
-                    width: 850px;
-                    height: 500px;
-                }
-        }
-
-        @media screen and (min-width: 162px) and (max-width: 197px){ /*Watch*/
-            .conteneur-images, .square, .section{
-                position: relative;
-                width: 50%; /* s'adapte à la largeur de son parent */
-                max-height: 60px;
-            }
-            .writing, .writing_section{
-                font-size: 5px;
-                top: 5;
-            }
-            .writing_plats {
-                left: -20px;
-            }
-        }
   </style>
 </head>
 <body>
@@ -185,131 +139,112 @@
             <div class="design2"></div>
             <div class="writing"> <h1>MENU</h1></div>
         </div>
-        /**/
-        <div class="traduction">
-              <!-- Ici le widget apparaîtra -->
-  <div id="google_translate_element"></div>
 
-  <script type="text/javascript">
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement(
-        {
-          pageLanguage: 'fr',
-          includedLanguages: 'fr,en',
-          layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-        }, 
-        'google_translate_element'
-      );
-    }
-  </script>
+        <a href="info.html" class="bouton-lien" style="top: 210%; left: 160%">Offres</a>
 
-  <!-- Attention : bien mettre https -->
-  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-        </div>
-        /**/
-        <div class="section"; style="top: 245%;left: 23%;width: 26%;height: 12%"> 
+        <div class="section"; style="top: 245%;left: 40%;width: 28%;height: 12%"> 
             <div class="writing_section">
             <h2>ENTRÉES</h2>
-            <h3 class="writing_plats"; style=" right: 80%;"> Salade<br><br></h3>
+            <h3 class="writing_plats"; style=" right: 142%;"> Salade<br><br></h3>
             </div>
         </div>
 
-        <div class="section"; style="top: 290%;left: 27%;width: 28%;height: 12%"> 
+        <div class="section"; style="top: 290%;left: 40%;width: 31%;height: 12%"> 
             <div class="writing_section">
-            <h2 class="dessert">DESSERTS</h2>
-             <h3 class="writing_plats"; style=" left: -35%">. 3 crêpes nature/confiture/chocolat<br></h3>
-             <h3 class="writing_plats"; style=" left: -35%">. Crème au chocolat/café<br></h3>
-             <h3 class="writing_plats"; style=" left: -35%"> . Pain perdu brioche aux bananes<br></h3>
-             <h3 class="writing_plats"; style=" left: -35%"> . Yaourt miel au muesli<br></h3>            
+            <h2>DESSERTS</h2>
+             <h3 class="writing_plats"; style=" left: -48%">. 3 crêpes nature/confiture/chocolat<br></h3>
+             <h3 class="writing_plats"; style=" left: -48%">. Crème au chocolat/café<br></h3>
+             <h3 class="writing_plats"; style=" left: -48%"> . Pain perdu brioche aux bananes<br></h3>
+             <h3 class="writing_plats"; style=" left: -48%"> . Yaourt miel au muesli<br></h3>            
             </div>
         </div>
         
-        <div class="section"; style="top: 380%;left: 23%;width: 25%;height: 12%"> 
+        <div class="section"; style="top: 380%;left: 40%;width: 31%;height: 12%"> 
             <div class="writing_section">
-            <h2 style="white-space: nowrap">Grill Food<br><br></h2>
+            <h2>Grill Food<br><br></h2>
             </div>
-            <h3 class="writing_plats"; style=" left: -70%"><br><br> . Brochettes mixte ......................................2500F</h3>
-            <p style="left: -70%"> Saucisses/Gésier/Fromage</p>
-            <h3 class="writing_plats"; style=" left: -70%"> . Brochettes de boeuf .................................3000F</h3>
-            <h3 class="writing_plats"; style=" left: -70%"> . Emincés de boeuf .....................................3500F</h3>
-            <p style="left: -70%"> Saucé au légumes</p>
-            <h3 class="writing_plats"; style=" left: -70%"> . Tilapia ........................................................3500F</h3>
-            <h3 class="writing_plats"; style=" left: -70%"> . Poulet braisé .............................................3500F</h3>
+            <h3 class="writing_plats"; style=" left: -130%"><br><br> . Brochettes mixte ......................................2500F</h3>
+            <p style="left: -120%"> Saucisses/Gésier/Fromage</p>
+            <h3 class="writing_plats"; style=" left: -130%"> . Brochettes de boeuf .................................3000F</h3>
+            <h3 class="writing_plats"; style=" left: -130%"> . Emincés de boeuf .....................................3500F</h3>
+            <p style="left: -120%"> Saucé au légumes</p>
+            <h3 class="writing_plats"; style=" left: -130%"> . Tilapia ........................................................3500F</h3>
+            <h3 class="writing_plats"; style=" left: -130%"> . Poulet braisé .............................................3500F</h3>
             <h3>Accompagnements</h3>
-            <p style="left: -70%"> Frite de pomme de terre, frite d'igname, Patate douce ,<br>légumes sautées, Attieke(700f la portion supplémentaire) </p>
+            <p style="left: -120%"> Frite de pomme de terre, frite d'igname, Patate douce ,<br>légumes sautées, Attieke(700f la portion supplémentaire) </p>
         </div>
         
-        <div class="section"; style="top: 535%;left: 23%;width: 28%;height: 12%"> 
+        <div class="section"; style="top: 550%;left: 40%;width: 35%;height: 12%"> 
             <div class="writing_section">
-            <h2>Pasta(2500F)</h2>
+            <h2>Pasta(2500)</h2>
             </div>
-            <h3 class="writing_plats"; style=" left: -60%"><br><br> . Bolognese<br></h3>
-            <h3 class="writing_plats"; style=" left: -60%"> . Spaghetti sauce mourade<br></h3>
-            <p style="left: -60%"> Tilapia/Poulet/Mouton/Filet de boeuf/viande hachée</p>
-            <h3 class="writing_plats"; style=" left: -60%"> . Salades de pâtes<br></h3>
-            <p style="left: -60%"> sauce vinaigrette, oignon, tomate, choux, carotte,<br> saucisse, oeuf, gésier</p>
-            <h3 class="writing_plats"; style=" left: -60%"> . Spaghetti sauté au légumes<br></h3>
-            <p style="left: -60%"> Tilapia/Poulet/Mouton/Filet de boeuf/viande hachée</p>
-            <h3 class="writing_plats"; style=" left: -60%"> . Spaghetti au beurre à l'ail<br></h3>
-            <p style="left: -60%"> Tilapia/Poulet/Mouton/Filet de boeuf/viande hachée</p>
-            <h3 class="writing_plats"; style=" left: -60%"> . Spaghetti stir fry<br></h3>
+            <h3 class="writing_plats"; style=" left: -115%"><br><br> . Bolognese<br></h3>
+            <h3 class="writing_plats"; style=" left: -115%"> . Spaghetti sauce mourade<br></h3>
+            <p style="left: -109%"> Tilapia/Poulet/Mouton/Filet de boeuf/viande hachée</p>
+            <h3 class="writing_plats"; style=" left: -115%"> . Salades de pâtes<br></h3>
+            <p style="left: -109%"> sauce vinaigrette, oignon, tomate, choux, carotte,<br> saucisse, oeuf, gésier</p>
+            <h3 class="writing_plats"; style=" left: -115%"> . Spaghetti sauté au légumes<br></h3>
+            <p style="left: -109%"> Tilapia/Poulet/Mouton/Filet de boeuf/viande hachée</p>
+            <h3 class="writing_plats"; style=" left: -115%"> . Spaghetti au beurre à l'ail<br></h3>
+            <p style="left: -109%"> Tilapia/Poulet/Mouton/Filet de boeuf/viande hachée</p>
+            <h3 class="writing_plats"; style=" left: -115%"> . Spaghetti stir fry<br></h3>
             </div>
         
-        <div class="section"; style="top: 710%;left:23%;width: 45%;height: 12%"> 
+        <div class="section"; style="top: 740%;left:40%;width: 58%;height: 12%"> 
             <div class="writing_section">
-            <h2>Monlinkoun(2500F)</h2> <br><br><br>
+            <h2>Monlinkoun(2500F)</h2>
             </div>
-            <p style="left: -30%"><br><br><br>(Poisson, Poulet, Filet de boeuf, Mouton, Viande hachée)</p>
-            <h3 class="writing_plats"; style=" left: -30%"> . Couscous au légumes<br></h3>
-            <h3 class="writing_plats"; style=" left: -30%"> . Riz au légumes<br></h3>
-            <h3 class="writing_plats"; style=" left: -30%"> . Riz au gras<br></h3>
-            <h3 class="writing_plats"; style=" left: -30%"> . Fried rice<br></h3>
-            <h3 class="writing_plats"; style=" left: -30%"> . Riz sauce blanche<br></h3>
-            <h3 class="writing_plats"; style=" left: -30%"> . Riz au yassa<br></h3>
+            <p style="left: -70%"><br><br>(Poisson, Poulet, Filet de boeuf, Mouton, Viande hachée)</p>
+            <h3 class="writing_plats"; style=" left: -70%"> . Couscous au légumes<br></h3>
+            <h3 class="writing_plats"; style=" left: -70%"> . Riz au légumes<br></h3>
+            <h3 class="writing_plats"; style=" left: -70%"> . Riz au gras<br></h3>
+            <h3 class="writing_plats"; style=" left: -70%"> . Fried rice<br></h3>
+            <h3 class="writing_plats"; style=" left: -70%"> . Riz sauce blanche<br></h3>
+            <h3 class="writing_plats"; style=" left: -70%"> . Riz au yassa<br></h3>
             <h3>Accompagnements</h3>
-            <p style="left: -30%"> Frite de pomme de terre, frite d'igname, Patate douce,<br>légumes sautées, Alloco(700f la portion supplémentaire) </p>
+            <p style="left: -70%"> Frite de pomme de terre, frite d'igname, Patate douce,<br>légumes sautées, Alloco(700f la portion supplémentaire) </p>
         </div>
         
-        <div class="section"; style="top: 870%;left: 23%;width: 45%;height: 12%"> 
+        <div class="section"; style="top: 905%;left: 40%;width: 57%;height: 12%"> 
             <div class="writing_section">
             <h2 style="white-space: nowrap">Queen food(2500F)</h2>
             </div>
-            <h3 class="writing_plats"; style=" left: -30%"><br><br>. Shawarma saucisse + frites<br></h3>
-            <h3 class="writing_plats"; style=" left: -30%"> . Shawarma boeuf + frites<br></h3>
-            <h3 class="writing_plats"; style=" left: -30%"> . Shawarma fusion<br></h3>
-            <h3 class="writing_plats"; style=" left: -30%"> . Chicken burger<br></h3>
-            <h3 class="writing_plats"; style=" left: -30%"> . Beef burger<br></h3>
-            <h3 class="writing_plats"; style=" left: -30%"> . Egg burger<br></h3>
+            <h3 class="writing_plats"; style=" left: -70%"><br><br>. Shawarma saucisse + frites<br></h3>
+            <h3 class="writing_plats"; style=" left: -70%"> . Shawarma boeuf + frites<br></h3>
+            <h3 class="writing_plats"; style=" left: -70%"> . Shawarma fusion<br></h3>
+            <h3 class="writing_plats"; style=" left: -70%"> . Chicken burger<br></h3>
+            <h3 class="writing_plats"; style=" left: -70%"> . Beef burger<br></h3>
+            <h3 class="writing_plats"; style=" left: -70%"> . Egg burger<br></h3>
             <h3>Sauces</h3>
-            <p style="left: -30%">Kebab/Chili/Ketchup/Béarnaise/Moutarde au miel</p>
+            <p style="left: -70%">Kebab/Chili/Ketchup/Béarnaise/Moutarde au miel</p>
         </div>
         
-        <div class="section"; style="top: 1010%;left: 23%;width: 34%;height: 12%"> 
+        <div class="section"; style="top: 1055%;left: 40%;width: 43%;height: 12%"> 
             <div class="writing_section">
             <h2>Ganzin(2500F)</h2>
             </div>
             <h3><br><br>Sauces</h3>
-            <p style="left: -45%">(Mouton/Poulet/Fromage/Tilapia/Kpkaman/fromage/<br>Poisson fumé)</p>
-            <h3 class="writing_plats"; style=" left: -45%"> .Tomate<br></h3>
-            <h3 class="writing_plats"; style=" left: -45%"> . Arachide<br></h3>
-            <h3 class="writing_plats"; style=" left: -45%"> . Friture + crincrin<br></h3>
-            <h3 class="writing_plats"; style=" left: -45%"> . Gombo<br></h3>
-            <h3 class="writing_plats"; style=" left: -45%"> . Gboman<br></h3>
-            <h3 class="writing_plats"; style=" left: -45%"> . Amanvivè<br></h3>
-            <h3 class="writing_plats"; style=" left: -45%"> . Jus d'oignon et tomate<br></h3>
-            <h3 class="writing_plats"; style=" left: -45%"> . Assrokouin<br></h3>
+            <p style="left: -95%">(Mouton/Poulet/Fromage/Tilapia/Kpkaman/fromage/<br>Poisson fumé)</p>
+            <h3 class="writing_plats"; style=" left: -95%"> .Tomate<br></h3>
+            <h3 class="writing_plats"; style=" left: -95%"> . Arachide<br></h3>
+            <h3 class="writing_plats"; style=" left: -95%"> . Friture + crincrin<br></h3>
+            <h3 class="writing_plats"; style=" left: -95%"> . Gombo<br></h3>
+            <h3 class="writing_plats"; style=" left: -95%"> . Gboman<br></h3>
+            <h3 class="writing_plats"; style=" left: -95%"> . Amanvivè<br></h3>
+            <h3 class="writing_plats"; style=" left: -95%"> . Jus d'oignon et tomate<br></h3>
+            <h3 class="writing_plats"; style=" left: -95%"> . Assrokouin<br></h3>
             <h3>Accompagnements</h3>
             <p style="left: -20%">(700F la portion supplémentaire)</p>
-            <h3 class="writing_plats"; style=" left: -45%"> . Amowô<br></h3>
-            <h3 class="writing_plats"; style=" left: -45%"> . Riz blanc<br></h3>
-            <h3 class="writing_plats"; style=" left: -45%"> . Télibo<br></h3>
-            <h3 class="writing_plats"; style=" left: -45%"> . Piron<br></h3>
-            <h3 class="writing_plats"; style=" left: -45%"> . Pâte de mais<br></h3>
-            <h3 class="writing_plats"; style=" left: -45%"> . Agbéli<br></h3>
-            <h3 class="writing_plats"; style=" left: -45%"> . Akassa<br></h3>
+            <h3 class="writing_plats"; style=" left: -95%"> . Amowô<br></h3>
+            <h3 class="writing_plats"; style=" left: -95%"> . Riz blanc<br></h3>
+            <h3 class="writing_plats"; style=" left: -95%"> . Télibo<br></h3>
+            <h3 class="writing_plats"; style=" left: -95%"> . Piron<br></h3>
+            <h3 class="writing_plats"; style=" left: -95%"> . Pâte de mais<br></h3>
+            <h3 class="writing_plats"; style=" left: -95%"> . Agbéli<br></h3>
+            <h3 class="writing_plats"; style=" left: -95%"> . Akassa<br></h3>
         </div>
         
-        <div class="section"; style="top: 1312%;left: 40%;width: 31%;height: 12%"> 
+        <div class="section"; style="top: 1380%;left: 40%;width: 42%;height: 12%"> 
             <div class="writing_section">
             <h2 style="display: inline-flex;">Café, infusion</h2>
              <h3 class="writing_plats"; style=" left: -35%"> . Café ............................................................500F</h3>
@@ -326,9 +261,9 @@
         </div>    
      
         
-        <div class="section"; style="top: 1500%;left: 40%;width: 17%;height: 12%"> 
+        <div class="section"; style="top: 1570%;left: 40%;width: 22%;height: 12%"> 
             <div class="writing_section">
-            <h2 class="crepes">Crêpes</h2>
+            <h2>Crêpes</h2>
              <h3 class="writing_plats"; style=" left: -35%"> . Nature(5) ..................................................1000F</h3>
              <h3 class="writing_plats"; style=" left: -35%"> . Confiture(5) ..............................................1500F</h3>
              <h3 class="writing_plats"; style=" left: -35%"> . Chocolat(5) ................................................1500F</h3>
@@ -337,7 +272,7 @@
             </div>
         </div>
         
-        <div class="section"; style="top: 1600%;left: 40%;width: 18%;height: 12%"> 
+        <div class="section"; style="top: 1680%;left: 40%;width: 22%;height: 12%"> 
             <div class="writing_section">
             <h2>Snacks</h2>
              <h3 class="writing_plats"; style=" left: -35%"> . Popcorn .........................................................500F</h3>
@@ -347,79 +282,88 @@
              <h3 class="writing_plats"; style=" left: -35%"> . Oeuf igname/Banane/Plantain/Patate <br>douce ..............................................................2000F</h3>       
             </div>
         </div>
-        /* --------------------------------------*/
-        <div class="section"; style="top: 1730%;left: 45%;width: 27%;height: 12%;font-family: 'Calibri'"> 
+
+        <div class="section"; style="top: 1800%;left: 40%;width: 32%;height: 12%"> 
             <div class="writing_section">
             <h2>COCKTAIL</h2>
-            <h3>Sobebra    1000 F</h3><br>
-            <h3 class="writing_plats"; style=" left: -35%"> <pre>. Aqua belle(1,5l)                 Beaufort lager(33cl)</pre></h3>
-            <h3 class="writing_plats"; style=" left: -35%"> <pre>. Youki cocktail fruit(33cl)       Guiness(33cl)</pre></h3>
-            <h3 class="writing_plats"; style=" left: -35%"> <pre>. Youki pamplemousse               Eku bavaria(33cl)</pre></h3>
-            <h3 class="writing_plats"; style=" left: -35%"> <pre>. Youki moka café(33cl)            Doppel Munich lager(33cl)</pre></h3>
-            <h3 class="writing_plats"; style=" left: -35%"> <pre>. Youzou(33cl)                     Béninoise(33cl)</pre></h3>
-            <h3 class="writing_plats"; style=" left: -35%"> <pre>. World cola(33cl)                 Pils(33cl)</pre></h3>
-            <h3 class="writing_plats"; style=" left: -35%"> <pre>. Malta tonic café(33cl)           Flag spécial(65cl)</pre></h3>  
+            <h3>Sobebra 1000 F</h3>
+            <h3 class="writing_plats"; style=" left: -35%"> <pre>. Aqua belle(1,5l)             Beaufort lager(33cl)</pre></h3>
+            <h3 class="writing_plats"; style=" left: -35%"> <pre>. Youki cocktail fruit(33cl)   Guiness(33cl)</pre></h3>
+            <h3 class="writing_plats"; style=" left: -35%"> <pre>. Youki pamplemousse           Eku bavaria(33cl)</pre></h3>
+            <h3 class="writing_plats"; style=" left: -35%"> <pre>. Youki moka café(33cl)        Doppel Munich lager(33cl)</pre></h3>
+            <h3 class="writing_plats"; style=" left: -35%"> <pre>. Youzou(33cl)                 Béninoise(33cl)</pre></h3>
+            <h3 class="writing_plats"; style=" left: -35%"> <pre>. World cola(33cl)             Pils(33cl)</pre></h3>
+            <h3 class="writing_plats"; style=" left: -35%"> <pre>. Malta tonic café(33cl)       Flag spécial(65cl)</pre></h3>  
             </div>
         </div>
-        <div class="section"; style="top: 1890%;left: 25%;width: 58%;height: 12%"> 
+        <div class="section"; style="top: 1930%;left: 40%;width: 57%;height: 12%"> 
             <div class="writing_section">
-            <h1 style="white-space: nowrap;">Cocktails 50 cl/80cl</h1>
-            <h3 style="white-space: nowrap;">Cocktails(50cl/80c) avec alcool----1500/2000 F</h3><br>
-            <h3 class="writing_plats"; style=" left: -20%">. Rubis tropical</h3>
-            <h3 class="writing_plats"; style=" left: -20%">. Sunrise</h3>
-            <h3 class="writing_plats"; style=" left: -20%">. Iced tea mojito</h3>
+            <h2 style="white-space: nowrap;">Cocktails 50 cl/80cl</h2>
+            <h3 class="writing_plats" style="white-space: nowrap; left: -38%"> . Cocktails(50cl/80c) avec alcool----1500/2000 F</h3>
+            <h3 class="writing_plats"; style=" left: -38%">. Rubis tropical</h3>
+            <h3 class="writing_plats"; style=" left: -38%">. Sunrise</h3>
+            <h3 class="writing_plats"; style=" left: -38%">. Iced tea mojito</h3>
             </div>
         </div>
-        <div class="section"; style="top: 1999%;left: 12%;width: 100%;height: 12%"> 
+        <div class="section"; style="top: 2020%;left: 40%;width: 57%;height: 12%"> 
             <div class="writing_section">
-            <h2 style="white-space: nowrap">Cocktails(50cl/80c) avec alcool----2500/3500 F</h2><br>
-            <h3 class="writing_plats"; style=" left: -2%">. Mojito </h3>
-            <h3 class="writing_plats"; style=" left: -2%">. Margarita </h3>
-            <h3 class="writing_plats"; style=" left: -2%">. Cuba libre </h3>
-            <h3 class="writing_plats"; style=" left: -2%">. Téquila sunrise </h3>
-            <h3 class="writing_plats"; style=" left: -2%">. Blue lagon </h3>
-            <h3 class="writing_plats"; style=" left: -2%">. Pina Colada </h3>
-            <h3 class="writing_plats"; style=" left: -2%">. Cosmo politan</h3>
-            <h3 class="writing_plats"; style=" left: -2%">. Sex on the beach</h3>
+            <h2 style="white-space: nowrap">Cocktails(50cl/80c)</h2>
+            <h3 style="white-space: nowrap">avec alcool(2500/3500 F)</h3>
+            <h3 class="writing_plats"; style=" left: -70%">. Mojito </h3>
+            <h3 class="writing_plats"; style=" left: -70%">. Margarita </h3>
+            <h3 class="writing_plats"; style=" left: -70%">. Cuba libre </h3>
+            <h3 class="writing_plats"; style=" left: -70%">. Téquila sunrise </h3>
+            <h3 class="writing_plats"; style=" left: -70%">. Blue lagon </h3>
+            <h3 class="writing_plats"; style=" left: -70%">. Pina Colada </h3>
+            <h3 class="writing_plats"; style=" left: -70%">. Cosmo politan</h3>
+            <h3 class="writing_plats"; style=" left: -70%">. Sex on the beach</h3>
             </div>
         </div>
-        <div class="section"; style="top: 2160%;left: 38%;width: 18%;height: 12%"> 
+        <div class="section"; style="top: 2180%;left: 40%;width: 21%;height: 12%"> 
             <div class="writing_section">
-            <h2>Autres</h2><br>
-            <h3 class="writing_plats"; style=" left: -35%">Shot------------------------------------------500 F</h3>
-            <h3 class="writing_plats"; style=" left: -35%">Ira-------------------------------------------1000 F</h3>
-            <h3 class="writing_plats"; style=" left: -35%">Vody vodka--------------------------------1000 F</h3>
+            <h2>Autres</h2>
+            <h3 class="writing_plats"; style=" left: -35%">. Shot-------------------------------------------------------------500 F</h3>
+            <h3 class="writing_plats"; style=" left: -35%">. Ira--------------------------------------------------------------1000 F</h3>
+            <h3 class="writing_plats"; style=" left: -35%">. Vody vodka------------------------------------------------1000 F</h3>
             </div>
-        </div>
+        </div>7
+
         <div class="designe3"></div>
         <div class="designe4">
-            <img src="src/salade.png" alt="image de salade" style="position: relative;width:60%; height: 2%; top: 0.5%; left: 12%;" >
-            <img src="src/dessert.jpeg" alt="image de dessert" style="position: relative;width:60%; height: 3%; top: 1.5%; left: 12%;" >
-            <img src="src/brochette.jpeg" alt="image de brochette" style="position: relative;width:60%; height: 2.5%; top: 4%; left: 12%;" >
-            <img src="src/braisé.jpeg" alt="image de braisé" style="position: relative;width:60%; height: 2.5%; top: 5%; left: 12%;" >
-            <img src="src/tilapia.jpeg" alt="image de tilapia" style="position: relative;width:60%; height: 2.5%; top: 6%; left: 12%;" >
-            <img src="src/pasta.jpeg" alt="image de pasta" style="position: relative;width:60%; height: 2.5%; top: 7.5%; left: 12%;" >
-            <img src="src/spaghetti.jpeg" alt="image de spaghetti" style="position: relative;width:60%; height: 2.5%; top: 9%; left: 12%;" >
-            <img src="src/spaghetti légumes.jpeg" alt="image de spaghetti" style="position: relative;width:60%; height: 2.5%; top: 10%; left: 12%;" >
-            <img src="src/couscous.jpeg" alt="image de couscous" style="position: relative;width:60%; height: 2.5%; top: 11%; left: 12%;" >
-            <img src="src/riz.jpg" alt="image du riz" style="position: relative;width:60%; height: 2.5%; top: 12%; left: 12%;" >
-            <img src="src/riz au gras.jpg" alt="image du ris au gras" style="position: relative;width:60%; height: 2.5%; top: 13%; left: 12%;">
-            <img src="src/shawama.jpeg" alt="image du Shawarma" style="position: relative;width:60%; height: 2%; top: 14%; left: 12%;" >
-            <img src="src/burger.jpg" alt="image de burger" style="position: relative;width:60%; height: 2%; top: 15%; left: 12%;" >
-            <img src="src/egg burger.jpeg" alt="image de burger" style="position: relative;width:60%; height: 2%; top: 15.9%; left: 12%;" >
-            <img src="src/amiwo.jpg" alt="image du amiwo" style="position: relative;width:60%; height: 2%; top: 18%; left: 12%;" >
-            <img src="src/telibo.jpeg" alt="image du telibo" style="position: relative;width:60%; height: 2%; top: 19%; left: 12%;" >
-            <img src="src/piron.jpeg" alt="image du piron" style="position: relative;width:60%; height: 2%; top: 20%; left: 12%;" >
-            <img src="src/agbeli.jpeg" alt="image du agbeli" style="position: relative;width:60%; height: 2%; top: 21%; left: 12%;" >
-            <img src="src/akassa.jpeg" alt="image du akassa" style="position: relative;width:60%; height: 2%; top: 22%; left: 12%;" >
-            <img src="src/riz.jpg" alt="image du riz" style="position: relative;width:60%; height: 2.5%; top: 23%; left: 12%;">
-            <img src="src/café.jpeg" alt="image des cafés" style="position: relative;width:60%; height: 3%; top: 25.5%; left: 12%;">
-            <img src="src/thé.jpeg" alt="image des thés" style="position: relative;width:60%; height: 3%; top: 26%; left: 12%;">
-            <img src="src/repas 4.jpg" alt="image des thés" style="position: relative;width:60%; height: 3%; top: 27%; left: 12%;">
-            <img src="src/crêpe.jpeg" alt="image des crêpes" style="position: relative;width:60%; height: 3%; top: 28%; left: 12%;">
-            <img src="src/crepes.jpeg" alt="image des crêpes" style="position: relative;width:60%; height: 3%; top: 29%; left: 12%;">
-            <img src="src/snaks.jpg" alt="image" style="position: relative;width:60%; height: 3%; top: 30%; left: 12%;">
-            <img src="src/snaks1.jpg" alt="image" style="position: relative;width:60%; height: 3%; top: 31%; left: 12%;">
+            <img src="src/salade.png" alt="image de salade" style="position: relative;width:60%; height: 1.5%; top: 0.5%; left: 12%;" >
+            <img src="src/dessert.jpeg" alt="image de dessert" style="position: relative;width:60%; height: 2%; top: 1.5%; left: 12%;" >
+            <img src="src/brochette.jpeg" alt="image de brochette" style="position: relative;width:60%; height:2%; top: 2.5%; left: 12%;" >
+            <img src="src/braisé.jpeg" alt="image de braisé" style="position: relative;width:60%; height: 2%; top: 3%; left: 12%;" >
+            <img src="src/tilapia.jpeg" alt="image de tilapia" style="position: relative;width:60%; height: 2%; top: 4%; left: 12%;" >
+            <img src="src/pasta.jpeg" alt="image de pasta" style="position: relative;width:60%; height: 2%; top: 5%; left: 12%;" >
+            <img src="src/spaghetti.jpeg" alt="image de spaghetti" style="position: relative;width:60%; height: 2%; top: 6%; left: 12%;" >
+            <img src="src/spaghetti légumes.jpeg" alt="image de spaghetti" style="position: relative;width:60%; height: 2%; top: 7%; left: 12%;" >
+            <img src="src/couscous.jpeg" alt="image de couscous" style="position: relative;width:60%; height: 2%; top: 8%; left: 12%;" >
+            <img src="src/riz.jpg" alt="image du riz" style="position: relative;width:60%; height: 2%; top: 9%; left: 12%;" >
+            <img src="src/riz au gras.jpg" alt="image du ris au gras" style="position: relative;width:60%; height: 2%; top: 10%; left: 12%;">
+            <img src="src/shawama.jpeg" alt="image du Shawarma" style="position: relative;width:60%; height: 1.5%; top: 11%; left: 12%;" >
+            <img src="src/burger.jpg" alt="image de burger" style="position: relative;width:60%; height: 1.5%; top: 12%; left: 12%;" >
+            <img src="src/egg burger.jpeg" alt="image de burger" style="position: relative;width:60%; height: 1.5%; top: 13%; left: 12%;" >
+            <img src="src/amiwo.jpg" alt="image du amiwo" style="position: relative;width:60%; height: 1.5%; top: 14%; left: 12%;" >
+            <img src="src/telibo.jpeg" alt="image du telibo" style="position: relative;width:60%; height: 1.5%; top: 15%; left: 12%;" >
+            <img src="src/piron.jpeg" alt="image du piron" style="position: relative;width:60%; height: 1.5%; top: 16%; left: 12%;" >
+            <img src="src/agbeli.jpeg" alt="image du agbeli" style="position: relative;width:60%; height: 1.5%; top: 17%; left: 12%;" >
+            <img src="src/akassa.jpeg" alt="image du akassa" style="position: relative;width:60%; height: 1.5%; top: 18%; left: 12%;" >
+            <img src="src/riz.jpg" alt="image du riz" style="position: relative;width:60%; height: 1.5%; top: 19%; left: 12%;">
+            <img src="src/café.jpeg" alt="image des cafés" style="position: relative;width:60%; height: 2%; top: 20%; left: 12%;">
+            <img src="src/thé.jpeg" alt="image des thés" style="position: relative;width:60%; height: 2%; top: 21%; left: 12%;">
+            <img src="src/repas 4.jpg" alt="image des thés" style="position: relative;width:60%; height: 2%; top: 22%; left: 12%;">
+            <img src="src/crêpe.jpeg" alt="image des crêpes" style="position: relative;width:60%; height: 2%; top: 23%; left: 12%;">
+            <img src="src/crepes.jpeg" alt="image des crêpes" style="position: relative;width:60%; height: 2%; top: 23.5%; left: 12%;">
+            <img src="src/snaks.jpg" alt="image" style="position: relative;width:60%; height: 2%; top: 24%; left: 12%;">
+            <img src="src/snaks1.jpg" alt="image" style="position: relative;width:60%; height: 2%; top: 25%; left: 12%;">
+            <img src="src/boissons.jpeg" alt="image" style="position: relative;width:60%; height: 2%; top: 26%; left: 12%;">
+            <img src="src/beer.jpeg" alt="image" style="position: relative;width:60%; height: 2%; top: 27%; left: 12%;">
+            <img src="src/cocktails.jpeg" alt="image" style="position: relative;width:60%; height: 2.5%; top: 28.5%; left: 12%;">
+            <img src="src/margarita.jpeg" alt="image" style="position: relative;width:60%; height: 2%; top: 30%; left: 12%;">
+            <img src="src/cuba_libre..jpeg" alt="image" style="position: relative;width:60%; height: 2%; top: 30.5%; left: 12%;">
+            <img src="src/tequila.jpeg" alt="image" style="position: relative;width:60%; height: 2%; top: 31%; left: 12%;">
+            <img src="src/autres.jpeg" alt="image" style="position: relative;width:60%; height: 2.2%; top: 32%; left: 12%;">
         </div>
         </div>
 </body>
