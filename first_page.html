@@ -19,6 +19,12 @@
             z-index: 1; /* Cette image est derrière */
         }
 
+        .black{
+            width: 50%;
+            height: 100%;
+            margin: 0 auto;
+        }
+
         .image-premier-plan {
             position: absolute;
             top: 100%;
@@ -128,9 +134,18 @@
             top: -50%;
         }
 
+        .traduction {
+                position: relative;
+                top: 190%;
+                left: 12%;
+                width: 30%;
+                height: 10%;
+                font-size: 10%;   
+            }
   </style>
 </head>
 <body>
+    <div class="black">
         <div class="conteneur-images">
             <img src="src/background.jpeg" alt="image de fond" class="image-fond">
             <img src="src/accueil.png" alt="image de premier plan" class="image-premier-plan" >
@@ -140,7 +155,28 @@
             <div class="writing"> <h1>MENU</h1></div>
         </div>
 
-        <a href="info.html" class="bouton-lien" style="top: 210%; left: 160%">Offres</a>
+        <div class="traduction">
+            <!-- Ici le widget apparaîtra -->
+<div id="google_translate_element"></div>
+
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement(
+      {
+        pageLanguage: 'fr',
+        includedLanguages: 'fr,en',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      }, 
+      'google_translate_element'
+    );
+  }
+</script>
+
+<!-- Attention : bien mettre https -->
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+      </div>
+
+        <a href="text.html" class="bouton-lien" style="top: 210%; left: 160%">Offres</a>
 
         <div class="section"; style="top: 245%;left: 40%;width: 28%;height: 12%"> 
             <div class="writing_section">
@@ -366,5 +402,6 @@
             <img src="src/autres.jpeg" alt="image" style="position: relative;width:60%; height: 2.2%; top: 32%; left: 12%;">
         </div>
         </div>
+    </div>
 </body>
 </html>
