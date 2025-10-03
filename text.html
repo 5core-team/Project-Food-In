@@ -12,6 +12,7 @@
             margin: 0 auto;
             border-radius: 8px;
         }
+        
         .bloc2{
             width: 50%;
             height: 100%;
@@ -32,6 +33,9 @@
         }
 
         @media screen and (min-width: 320px) and (max-width: 450px){ /*taille mobile*/
+            .bloc1, .bloc2, .bloc3{
+                width: 65%;
+            }
         }
         @media screen and (min-width: 700px) and (max-width: 1400px) { /*taille tablette*/
         }
@@ -44,6 +48,28 @@
     </style>
 </head>
 <body>
+    <div class="traduction">
+        <div class="traduction">
+                    <!-- Ici le widget apparaîtra -->
+        <div id="google_translate_element"></div>
+
+        <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+            {
+                pageLanguage: 'fr',
+                includedLanguages: 'fr,en',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 
+            'google_translate_element'
+            );
+        }
+        </script>
+
+        <!-- Attention : bien mettre https -->
+        <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        </div>
+    </div>
     <div class="photo">
         <img src="src/FOOD IN Fond Bleu.png"; alt="logo"; class="image-premier-plan">
     </div>
